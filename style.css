@@ -13,17 +13,16 @@ body{
     color:#333;
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Verdana, sans-serif;
     margin:0px 7px;
-    background-color:#eee;
-    background-image:url(bg.gif);
+    background-color:#bfccb8;
 }
 
 .base{
     margin:0 auto;
     max-width:850px;
-    background-color:rgba(255,255,255,0.9);
+    background-color:#fff;
     border-width:0px 3px;
     border-style:double;
-    border-color:#fff;
+    border-color:#666;
 }
 
 .header{
@@ -122,7 +121,7 @@ h6{
     font-size:80%;
     font-weight:normal;
     margin:5px;
-    background-color:#e9f1f6;
+    background-color:#e6f7f1;
 }
 
 em{
@@ -144,12 +143,12 @@ i{
 }
 
 a:link{
-    color:#05afcf;
+    color:#4cc59c;
     text-decoration:none;
 }
 
 a:visited{
-    color:#05afcf;
+    color:#4cc59c;
     text-decoration:none;
 }
 
@@ -259,7 +258,7 @@ display: inline-block;
     padding:5px;
     margin:5px 0px;
     font-size:90%;
-    background-color:#fff;
+    background-color:#fafafa;
 }
 
 .dt1{
@@ -274,7 +273,7 @@ display: inline-block;
 }
 
 .memo{
-    background-color:#fff;
+    background-color:#fafafa;
     font-size:80%;
     padding:0px 10px;
     height:100px;
