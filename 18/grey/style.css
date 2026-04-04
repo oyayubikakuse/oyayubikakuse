@@ -1,0 +1,352 @@
+﻿@charset "UTF-8";
+@import url("html5reset-1.6.1.css");
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+
+/* ↓レイアウト↓ */
+
+*{
+    line-height:150%;
+}
+
+body{
+    color:#eee;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Verdana, sans-serif;
+    margin:0px 7px;
+    background-color:#333;
+}
+
+.base{
+    margin:0 auto;
+    max-width:850px;
+    background-color:#727171;
+    border-width:0px 1px;
+    border-style:dotted;
+    border-color:#fff;
+}
+
+.header{
+    padding:5px;
+    text-align:center;
+}
+
+.footer{
+    padding:5px;
+    text-align:center;
+}
+
+.work{
+    padding:15px;
+}
+
+
+.menu{
+    font-size:90%;
+    font-family: 'Cinzel', serif;
+    margin:0px 0px 20px 0px;
+}
+
+.box{
+    overflow: hidden ;		/* floatを解除する */
+}
+
+.text{
+    margin:15px 0px;
+    padding:15px;
+    line-height:180%;
+}
+
+.textmenu{
+    text-align:center;
+    padding:5px;
+    margin:5px;
+    word-spacing:20px;
+    font-family: 'Cinzel', serif;
+}
+
+img
+{
+	max-width: 90% ;
+	height: auto ;
+}
+
+
+/* ↓タグ↓ */
+
+h1{
+    font-size:130%;
+    font-weight:normal;
+    margin:10px;
+    color:#fff;
+    font-family: 'Cinzel', serif;
+}
+
+h2{
+    font-size:80%;
+    font-weight:normal;
+    margin:10px;
+    color:#fff;
+}
+
+h3{
+    font-size:130%;
+    font-weight:normal;
+    text-align:center;
+    margin:20px 0px;
+    font-family: 'Cinzel', serif;
+}
+
+h4{
+    font-size:100%;
+    font-weight:normal;
+    margin:10px 0px;
+    border-width:0px 0px 1px 0px;
+    border-style:solid;
+    border-color:#ccc;
+}
+
+h4:before{
+    content:'✪';
+    font-size:120%;
+    margin:3px;
+}
+
+h5{
+    font-size:90%;
+    font-weight:normal;
+    margin:5px;
+}
+
+h6{
+    font-size:80%;
+    font-weight:normal;
+    margin:5px;
+    background-color:#444;
+}
+
+em{
+   background: linear-gradient(transparent 60%, #cb7b08 60%);
+}
+
+strong{
+    background-color:#3caabd;
+    font-weight:normal;
+}
+
+small{
+    font-size:80%;
+}
+
+i{
+    font-style:italic;
+    color:#fff;
+}
+
+a:link{
+    color:#ee8cb9;
+    text-decoration:none;
+}
+
+a:visited{
+    color:#ee8cb9;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+blockquote{
+    padding:5px;
+    font-size:90%;
+    margin:5px 10px;
+    color:#d2b48c;
+}
+
+blockquote:before{
+    content:'\201c';
+    font-size:150%;
+    color:#fff;
+    margin:0px 10px;
+}
+
+blockquote:after{
+    content:'\201d';
+    font-size:150%;
+    color:#fff;
+    margin:0px 10px;
+}
+
+li{
+    padding:5px;
+}
+
+dl{
+    padding-left:3px;
+    margin:10px;
+}
+
+dt{
+    padding-left:5px;
+}
+
+dd{
+    padding-left:10px;
+}
+
+address{
+    font-size:70%;
+}
+
+cite{
+    font-size:smaller;
+}
+
+
+/* ↓classタグ↓ */
+
+.list1{
+    list-style:none;
+    text-align:center;
+}
+
+.list1 li{
+display: inline-block;
+}
+
+.list2{
+    list-style-type: upper-roman;
+    list-style-position:inside;
+}
+
+.hr1{
+    margin:5px 0px;
+    border-top: 1px #ccc;
+    border-bottom: 1px #fff;
+    border-style:solid;
+}
+
+.hr2{
+    margin:5px 0px;
+    border-top: 1px #aaa;
+    border-style:dashed;
+}
+
+.hr3{
+    margin:5px 0px;
+    height:20px;
+    border-width:0px;
+}
+
+.p1{
+    padding:5px;
+    margin:5px 0px;
+    font-size:90%;
+}
+
+.p2{
+    border-style:double;
+    border-width:3px;
+    padding:3px;
+    margin:5px 0px;
+    font-size:90%;
+}
+
+.p3{
+    border-style:dashed;
+    border-width:1px;
+    padding:5px;
+    margin:5px 0px;
+    font-size:90%;
+    background-color:#9d99a5;
+}
+
+.dt1{
+    margin:7px 0px;
+    
+}
+
+.dd1{
+    font-size:90%;
+    border-width:0px 0px 0px 3px;
+    border-style:double;
+}
+
+.memo{
+    background-color:#9d99a5;
+    font-size:80%;
+    padding:0px 10px;
+    height:100px;
+    overflow:auto;
+    margin:5px 10px;
+}
+
+.img1{
+    box-shadow:1px 1px 3px -1px #999999;
+-moz-box-shadow:1px 1px 3px -1px #999999;
+-webkit-box-shadow:1px 1px 3px -1px #999999;
+}
+
+.counter{
+    font-family: 'Cinzel', serif;
+    font-size:80%;
+}
+
+
+/*↓ディスプレイ480px以下用↓*/
+
+@media screen and (max-width:480px) 
+
+{
+    
+.base{
+    width:auto;
+    margin:0px;
+}
+
+.work{
+    float:none;
+    width:auto;
+    margin:0px;
+}
+
+.text{
+    float:none;
+    width:auto;
+    margin:0px;
+}
+
+.menu{
+    float:none;
+    width:auto;
+    margin:0px;
+}
+
+.textmenu a{
+    display:block;
+    font-size:120%;
+}
+
+.textmenu a:hover{
+    background-color:#fafafa;
+}
+
+
+.list1 li{
+    display:block;
+}
+
+.list1 a{
+    display:block;
+    font-size:110%;
+}
+
+.list1 a:hover{
+    background-color:#fafafa;
+}
+
+h1{
+    font-size:110%;
+}
+
+}
