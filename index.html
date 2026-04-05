@@ -61,7 +61,38 @@
 
  
 }
-  
+
+.recent {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 250px;
+}
+
+.recent h2 {
+  margin-bottom: 15px;
+}
+
+.post {
+  margin-bottom: 10px;
+}
+
+.post a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.more {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+    
   </style>
 </head>
 <body>
@@ -77,6 +108,27 @@
   <a href="works/">Works</a>
   <a href="Archive/">Archive</a>
 </nav>
+
+<div class="recent">
+  <h2>Archive</h2>
+
+  <div class="post">
+    <a href="Archive/post3.html">記事タイトル③</a>
+  </div>
+
+  <div class="post">
+    <a href="Archive/post2.html">記事タイトル②</a>
+  </div>
+
+  <div class="post">
+    <a href="Archive/post1.html">記事タイトル①</a>
+  </div>
+
+  <div class="more">
+    <a href="Archive/">and more...</a>
+  </div>
+
+</div>
 <p>GitHub Pagesで公開しています </p>
 </body>
 </html>
