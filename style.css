@@ -3,17 +3,15 @@ body {
 font-family: "Noto Serif JP", serif;
 }
 
-.read-btn {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
+.inline-read-link {
+  color: #0066cc;
+  text-decoration: underline;
   cursor: pointer;
   font-weight: bold;
 }
-.read-btn:hover {
-  opacity: 0.8;
+
+.inline-read-link:hover {
+  color: #004499;
 }
 
 .book-modal {
