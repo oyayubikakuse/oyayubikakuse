@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  
 <h1>春雷</h1>
 
 <img src="../images/syunrai_syoei.jpg" alt="小説「春雷」書影" width="300">
@@ -8,6 +13,9 @@
 <p>果たしてその勝敗は、『絵を描かない画家』楡島が描いた絵とは……？</p>
 <p>美の燃え尽きるその時の、雷鳴のような一瞬を書き留めた、口奈蝉の名刺的作品。</p>
 
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
 <button type="button" class="read-btn" onclick="openBookModal()">試し読みはこちら</button>
 
 <div id="book-modal" class="book-modal" onclick="closeBookModal()">
@@ -24,4 +32,50 @@
   </div>
 </div>
 
+  <script>
+  const pages = [
+    '../images/s_shidoku1.jpg',
+    '../images/s_shidoku2.jpg',
+    '../images/s_shidoku3.jpg',
+    '../images/s_shidoku4.jpg'
+  ];
+
+  let currentPageIndex = 0;
+
+  function openBookModal() {
+    currentPageIndex = 0;
+    updateViewer();
+    document.getElementById('book-modal').style.display = 'flex';
+  }
+
+  function closeBookModal() {
+    document.getElementById('book-modal').style.display = 'none';
+  }
+
+  function changePage(step) {
+    currentPageIndex += step;
+
+    if (currentPageIndex < 0) currentPageIndex = 0;
+    if (currentPageIndex >= pages.length) currentPageIndex = pages.length - 1;
+
+    updateViewer();
+  }
+
+  function updateViewer() {
+    const img = document.getElementById('viewer-img');
+    const counter = document.getElementById('page-counter');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+
+    img.src = pages[currentPageIndex];
+    counter.textContent = `${currentPageIndex + 1} / ${pages.length}`;
+
+    prevBtn.style.display = (currentPageIndex === 0) ? 'none' : 'block';
+    nextBtn.style.display = (currentPageIndex === pages.length - 1) ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
+  
 <a href="./">一覧に戻る</a>
