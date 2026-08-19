@@ -8,4 +8,20 @@
 <p>果たしてその勝敗は、『絵を描かない画家』楡島が描いた絵とは……？</p>
 <p>美の燃え尽きるその時の、雷鳴のような一瞬を書き留めた、口奈蝉の名刺的作品。</p>
 
+<button type="button" class="read-btn" onclick="openBookModal()">試し読みはこちら</button>
+
+<div id="book-modal" class="book-modal" onclick="closeBookModal()">
+  <div class="book-modal-content" onclick="event.stopPropagation()">
+    <button class="close-btn" onclick="closeBookModal()">×</button>
+
+    <div class="viewer-container">
+      <button class="nav-btn prev-btn" onclick="changePage(-1)">&#10094;</button>
+      <img id="viewer-img" src="" alt="試し読み">
+      <button class="nav-btn next-btn" onclick="changePage(1)">&#10095;</button>
+    </div>
+
+    <div id="page-counter" class="page-counter"></div>
+  </div>
+</div>
+
 <a href="./">一覧に戻る</a>
