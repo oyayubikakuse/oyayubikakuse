@@ -70,8 +70,8 @@
     img.src = pages[currentPageIndex];
     counter.textContent = `${currentPageIndex + 1} / ${pages.length}`;
 
-    prevBtn.style.display = (currentPageIndex === 0) ? 'none' : 'block';
-    nextBtn.style.display = (currentPageIndex === pages.length - 1) ? 'none' : 'block';
+    prevBtn.style.display = (currentPageIndex === pages.length - 1) ? 'none' : 'block';
+    nextBtn.style.display = (currentPageIndex === 0) ? 'none' : 'block';
   }
 </script>
 
